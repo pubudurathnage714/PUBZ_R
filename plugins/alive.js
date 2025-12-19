@@ -7,14 +7,14 @@ cmd({
     category: "main",
     filename: __filename
 },
-async (AURA-MD, mek, m, {
+async (AURAMD, mek, m, {
     from, quoted, body, isCmd, command, args, q, isGroup,
     sender, senderNumber, botNumber2, botNumber, pushname,
     isMe, isOwner, groupMetadata, groupName, participants,
     groupAdmins, isBotAdmins, isAdmins, reply
 }) => {
     try {
-        return await AURA-MD.sendMessage(from, {
+        return await AURAMD.sendMessage(from, {
             image: { url: config.ALIVE_IMG },
             caption: config.ALIVE_MSG
         }, { quoted: mek });
